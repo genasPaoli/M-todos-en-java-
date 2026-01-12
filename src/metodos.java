@@ -1,3 +1,5 @@
+import java.util.Optional;
+
 public class metodos {
     // un método no puede estar viviendo en otro método
     //Pero si es posible invocar un metodo dentro del método main
@@ -21,6 +23,9 @@ public class metodos {
     public static void convertir(String mensaje){
         System.out.println(mensaje.toLowerCase());
     }
+    public static void aumentar (int num1 ){
+        System.out.println(num1 +=num1);
+    }
 
     //Método main poara invocar los métodos
     public static void main (String[] args){
@@ -30,6 +35,20 @@ public class metodos {
         System.out.println(sumarDecimales(5,5));
         asteriscos();
         convertir("El gEnAS");
+        aumentar(5);
+
+        // -- Class String
+        String nombre = "Genas";
+        String name = "genas";
+
+        System.out.println((nombre.charAt(0)));
+        System.out.println(nombre.length());
+        System.out.println(nombre.charAt(nombre.length()-1));
+        System.out.println(nombre.replace('i','1'));
+        System.out.println(nombre.isBlank());
+        System.out.println(nombre.isEmpty());
+        System.out.println(nombre.equals(name));
+        System.out.println(name.equalsIgnoreCase(name));
 
 
     }
